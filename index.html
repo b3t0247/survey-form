@@ -15,7 +15,7 @@
                 <label id="email-label">Enter your email: <input type="email" id="email" placeholder="Enter your Email" required></label>
                 <label id="number-label">Age (Optional) <input type="number" id="number" min="13" max="120" placeholder="Age"></label>
                 <label>Which option best describes your current role?
-                    <select name="role" id="dropdown">
+                    <select name="role" id="dropdown" required>
                         <option value="">Select current role</option>
                         <option value="1">Full Time Job</option>
                         <option value="2">Full Time Learner</option>
@@ -26,14 +26,14 @@
             </fieldset>
             <fieldset>
                 <label id="recommend-label">Would you recommend programming to a friend? 
-                    <label><input type="radio" class="inline" name="select-one" /> Definitely</label>
-                    <label><input type="radio" class="inline" name="select-one" /> Maybe</label>
-                    <label><input type="radio" class="inline" name="select-one" /> Not sure</label>
+                    <label><input class="inline" type="radio" name="select-one" required/> Definitely</label>
+                    <label><input class="inline" type="radio" name="select-one" required/> Maybe</label>
+                    <label><input class="inline" type="radio" name="select-one" required/> Not sure</label>
                 </label>
             </fieldset>
             <fieldset>
                 <label id="favorite-label">What is your favorite programming language?
-                    <select name="favorite" id="dropdown">
+                    <select name="favorite" id="dropdown" required>
                         <option value="">Select one</option>
                         <option value="1">Python</option>
                         <option value="2">Ruby</option>
@@ -43,13 +43,19 @@
             </fieldset>
             <fieldset>
                 <label>Which programming languages would you like ot learn or improve? (Check all that apply) 
-                    <label><input type="checkbox" value="python"> Python</label>
-                    <label><input type="checkbox" id="checkbox">Ruby</label>
-                    <label><input type="checkbox" id="checkbox">JavaScript</label>
-                    <label><input type="checkbox" id="checkbox">C#</label>
-                    <label><input type="checkbox" id="checkbox">Go</label>
+                    <label><input type="checkbox" value="1" > Python</label>
+                    <label><input type="checkbox" value="2" >Ruby</label>
+                    <label><input type="checkbox" value="3" >JavaScript</label>
+                    <label><input type="checkbox" value="4" >C#</label>
+                    <label><input type="checkbox" value="5" >Go</label>
                 </label>
             </fieldset>
+            <fieldset>
+                <label>Any comments or suggestions?
+                    <textarea name="comments" row="5" cols="40" placeholder="Enter your comment here..."></textarea>
+                </label>
+            </fieldset>
+            <input id="submit" type="submit" value="Submit" />
         </form>
     </body>
 </html>
