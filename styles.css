@@ -14,8 +14,8 @@ body {
     margin: 0;
     background-color: lightblue;
     color: black;
-    font-family: 'Lucida Sans';
-    font-size: 18px;
+    font-family: Tahoma;
+    font-size: 16px;
 }
 
 h1, p {
@@ -25,12 +25,21 @@ h1, p {
 
 form {
     margin: 0 auto;
-    max-width: 600px;
+    max-width: 500px;
     min-width: 300px;
+    width: 60vw;
+    padding-bottom: 2em;
+
 }
 
 fieldset {
+    border: none;
+    /* background-color:rgba(89, 143, 167, 0.587); */
     padding: 2rem 0;
+}
+
+fieldset:not(:last-of-type) {
+    border-bottom: 3px solid #3b3b4d;
 }
 
 label {
@@ -44,4 +53,33 @@ select {
     width: 100%;
     margin: 10px 0 0 0;
     min-height: 2em;
+}
+
+input, textarea {
+    /* background-color: gray; */
+    border: 1px solid gray;
+    color: #ffffff;
+}
+
+.check-box,
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 40%;
+    /* Center bottom */
+    margin: 1em auto 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #334f52;
+    border-color: white;
+    min-width: 300px;
+}
+
+a {
+
 }
